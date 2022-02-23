@@ -4,16 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
   </head>
   <body>
-    <h1>What's the Weather?</h1>
-    <form id="form">
-      <input id="user-input" type="text" placeholder="Search a city...">
-      <button id="search-btn">Get Weather</button>
-    </form>
-    <img src="#" />
+    <div class="container">
+      <h1 class="title">What's the Weather Right Now?</h1>
+      <form id="form">
+        <input id="user-input" type="text" placeholder="Search a city...">
+        <button id="search-btn">Get Weather</button>
+      </form>
+      <div id="weather-container">
+        <h2 class="header"><span id="city-name"></span></h2>
+        <img id="weather-img" src="" alt="">
+        <div id="weather-details">
+          <p><span id="temp"></span></p>
+          <p id="weather-code"></p>
+        </div>
+      </div>
+      <img src="" />
+    </div>
   </body>
 </html>
